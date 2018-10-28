@@ -5,6 +5,7 @@ term = gets.to_i
 print 'Ok. And what is the year interest rate? '
 month_interest = gets.to_f/12/100
 monthly_payment = month_interest*(1+month_interest)**term*total_sum/((1+month_interest)**term - 1)
+
 puts "Monthly payment is %.2f" %monthly_payment
 puts "%-16s| %-16s| %-16s| %-16s| %s" %['Time passed', 'Current debt', 'Monthly payment', 'Interest amount', 'Debt body payment']
 for i in (1..term) do
