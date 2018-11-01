@@ -1,6 +1,6 @@
 print "Enter the mortage amount, please: "
 total_sum = gets.to_i
-print "Enter the mortage term in months: "
+print "Enter the mortage term in months, please: "
 term = gets.to_i
 print 'Ok. And what is the year interest rate? '
 month_interest = gets.to_f/12/100
