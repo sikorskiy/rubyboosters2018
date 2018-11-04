@@ -1,6 +1,6 @@
 # you need to install gem 'httparty' before. Enter 'gem install httparty' in Linux console for installation
 require 'httparty' #library which makes creating request easier
-site = 'http://localhost:3000/halloffame'#'http://rubyboosters.herokuapp.com/halloffame'
+site = 'http://rubyboosters.herokuapp.com/halloffame'
 #hash-parameters for post request
 post_options = {
   body: 
