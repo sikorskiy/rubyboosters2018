@@ -1,0 +1,1 @@
+WORDS = File.readlines('noun_dictionary.txt').each { |l| l.chomp! }
