@@ -15,20 +15,21 @@ post_options = {
 get_options = {
   body:
   {
-    password: 'your_original_cloud9_password',
+    password: '7wxrY3QcWJ+7',
     user: 'Vasiliy Sikorskiy'
   }
 }
 #this string sends user name and score to database and stores response in variable
-response = HTTParty.post(site, post_options)
-puts JSON.parse(response.body)
+#response = HTTParty.post(site, post_options)
+#puts JSON.parse(response.body)
 #you can change some values:
 post_options[:body][:score] = 2
 #one more data sending
-response = HTTParty.post(site, post_options)
-puts JSON.parse(response.body)
+#response = HTTParty.post(site, post_options)
+#puts JSON.parse(response.body)
 #here we get current Hall of fame for some user
 response = HTTParty.get(site, get_options)
-arr = JSON.parse(response.body).to_a
+p response.headers
+arr = response.to_a
 puts arr[0]
 puts "User: #{arr[0]['user']}\nScore: #{arr[0]['score']}"
