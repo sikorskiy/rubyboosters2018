@@ -59,12 +59,24 @@ class Player < Person
     @games.last
   end
 
+  def registration
+    # server request for validation
+  end
+
+  def ready_to_start
+    # server request for opponents
+  end
+
   def wait_for_move
     # wait for movement from any game
   end
 
   def move(game, from_square, to_square)
     game.move(from_square, to_square)
+  end
+
+  def send_message(player_id, game_id)
+    # sends message to server with move, draw, text and so on
   end
 
   def my_move?(game)
