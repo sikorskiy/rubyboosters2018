@@ -2,7 +2,6 @@ student_repos/
 05.lesson/credentials.json
 05.lesson/quickstart.rb
 05.lesson/token.yaml
-chessapp/.git/
-chessapp/.gitignore
+chessapp/
 .idea/
 other/
