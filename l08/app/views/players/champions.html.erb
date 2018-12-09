@@ -1,0 +1,16 @@
+<h1>Players#champions</h1>
+<p>Find me in app/views/players/champions.html.erb</p>
+<% content_for(:title) {"Champions page"} %>
+
+<% @players.each do |p| %>
+  <h4><%= p.name %></h4>
+  <p> <%= "#{p.birth_year}-#{p.death_year}" %></p>
+<% end %>
+
+
+<form action="/form">
+  <input type="text" name="name">
+  <input type="text" name="birth_year">
+  <input type="text" name="death_year">
+  <input type="submit">
+</form>

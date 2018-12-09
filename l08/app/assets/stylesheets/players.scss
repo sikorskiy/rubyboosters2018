@@ -1,0 +1,72 @@
+// Place all the styles related to the Players controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.block {
+  display: flex;
+}
+
+.board {
+  padding: 0 20px;
+}
+
+span.hidden {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+ul.menu {
+  list-style-type: none;
+}
+
+.menu li {
+  padding: 0 50px;
+  font-size: 30px;
+}
+.menu a {
+  text-decoration: none;
+}
+
+.player-list {
+  align-self: flex-start;
+  background-color: aliceblue;
+  border: 1px solid black;
+  width: 20%;
+}
+
+td {
+  width: 5vw;
+  height: 5vw;
+  font-size: 3vw;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+li:hover span.hidden {
+  display: inline;
+  color: #B00100;
+}
+
+td:hover {
+  border: 3px dotted red;
+}
+
+tr:nth-child(odd) td:nth-child(even)  {
+  background-color: #fffcc8;
+}
+
+tr:nth-child(odd) td:nth-child(odd) {
+  background-color: #4b7787;
+}
+
+tr:nth-child(even) td:nth-child(even) {
+  background-color: #4b7787;
+}
+
+tr:nth-child(even) td:nth-child(odd) {
+  background-color: #fffcc8;
+}
